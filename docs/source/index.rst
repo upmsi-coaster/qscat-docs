@@ -1,7 +1,7 @@
-Welcome to QSCAT's documentation!
-===================================
+QSCAT's documentation
+=====================
 
-**QSCAT** (/lu'make/) is a Python library for cooks and food lovers
+Welcome to **QSCAT** documentation.
 
 .. note::
    This project is under active development.
