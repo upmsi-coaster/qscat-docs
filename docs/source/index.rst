@@ -10,4 +10,10 @@ Welcome to **QSCAT** documentation.
    :maxdepth: 2
    :caption: For Users
 
-   QSCAT User Manual <user_manual/index>
+   QSCAT User's Manual <users_manual/index>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: For Developers
+
+   QSCAT Developer's Manual <developers_manual/index>
