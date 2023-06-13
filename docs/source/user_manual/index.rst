@@ -14,7 +14,7 @@ QSCAT User's Manual
    plugin/sample_workflow
    tabs/automator
    tabs/baseline
-   tabs/shorlines
+   tabs/shorelines
    tabs/transects
    tabs/statistics
    tabs/forecasting
