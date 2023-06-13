@@ -12,6 +12,7 @@ QSCAT User's Manual
    plugin/required_inputs
    plugin/data_preparation
    plugin/sample_workflow
+   tabs/project_settings
    tabs/automator
    tabs/baseline
    tabs/shorelines
