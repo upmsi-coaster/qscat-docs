@@ -3,7 +3,8 @@ QSCAT User's Manual
 
 .. toctree::
    :maxdepth: 2
-
+   :numbered: 4
+   
    introduction/overview
    introduction/system_requirements
    introduction/features
@@ -19,3 +20,7 @@ QSCAT User's Manual
    tabs/forecasting
    tabs/visualization
    tabs/about
+   others/help_and_support
+   others/contributors
+   others/appendices
+   others/references
