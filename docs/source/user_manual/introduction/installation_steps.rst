@@ -10,5 +10,5 @@ QSCAT plugin v1.0.0-beta is currently available as a ZIP file for installation. 
 2. Open QGIS and select Settings, followed by User Profiles, and then Open Active Profile Folder. This will open the folder where the plugin content should be copied.
 3. Navigate to the python > plugins folder.
 4. Open the qscat zip folder and copy the qscat folder in the zip file to python > plugins folder. Alternatively,  unzip the qscat folder first, then copy and paste the qscat folder in the unzipped folder to the python > plugins folder. 
-5. Close and reopen QGIS. Go to Plugins and select Manage and Install Plugins. The "QGIS' Shoreline Change Analysis Tool" should now appear in the list if the qscat folder was copied correctly. Check the checkbox to enable the plugin.
+5. Close and reopen QGIS. Go to :menuselection:`Plugins --> Manage and Install Plugins`. The "QGIS' Shoreline Change Analysis Tool" should now appear in the list if the qscat folder was copied correctly. Check the checkbox to enable the plugin.
 6. Once enabled, the "QSCAT" plugin will appear in the toolbar.
