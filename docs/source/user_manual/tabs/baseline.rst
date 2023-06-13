@@ -17,6 +17,13 @@ Baseline Parameters
 Baseline Placement
 ==================
 
+.. _figure_baseline_placement:
+
+.. figure:: img/baseline_placement.png
+   :align: center
+
+   Baseline placement
+
 
 Baseline Orientation
 ====================
