@@ -1,7 +1,6 @@
 *********
 Automator
 *********
-The automator tab allows pre-processing steps to be done inside the QSCAT plugin.
 
 Shorelines
 ==========
