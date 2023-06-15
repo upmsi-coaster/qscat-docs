@@ -17,9 +17,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinxcontrib.bibtex',
+    #'sphinxcontrib.bibtex',
 ]
-bibtex_bibfiles = ['refs.bib']
+#bibtex_bibfiles = ['refs.bib']
 #bibtex_reference_style = 'author_year'
 
 intersphinx_mapping = {
