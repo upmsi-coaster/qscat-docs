@@ -28,5 +28,5 @@ Latest QSCAT plugin is currently available as a ZIP file for installation. The s
 6. Once enabled, the `QSCAT` plugin will appear in the toolbar.
 
 
-.. |python|: :file:`python`
-.. |plugins|: :file:`python`
+.. |python| replace:: :file:`python`
+.. |plugins| replace:: :file:`plugins`
