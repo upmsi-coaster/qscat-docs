@@ -13,6 +13,9 @@ Tab: Statistics
 Statistics Parameters
 =====================
 
+Summary Report
+--------------
+
 Shoreline Change Statistics
 ---------------------------
 
@@ -31,10 +34,9 @@ Linear Regression Rate (LRR)
 Weighted Linear Regression (WLR)
 ................................
 
-Summary Report
---------------
-
-
 Area Change Statistics
-======================
+----------------------
+
+
+
 
