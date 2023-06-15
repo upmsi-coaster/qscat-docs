@@ -21,7 +21,7 @@ Baseline Placement
 
 .. figure:: img/baseline_placement.png
    :align: center
-
+   
    Baseline placement
 
 
