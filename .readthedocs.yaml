@@ -13,6 +13,8 @@ python:
   install:
     - method: pip
       path: .
+      extra_requirements: 
+        sphinxcontrib-bibtex
 
 formats:
   - pdf
