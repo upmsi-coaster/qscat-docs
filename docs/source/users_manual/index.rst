@@ -24,5 +24,5 @@ QSCAT User's Manual
    tabs/about
    others/help_and_support
    others/contributors
-   others/appendices
+   others/appendices/index
    others/references
