@@ -3,6 +3,4 @@
 References
 ==========
 
-.. _ref1:
-
-XD
+.. bibliography::

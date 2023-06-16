@@ -10,7 +10,7 @@ Tab: Statistics
       :local:
       :depth: 2
 
-After casting the transects, QSCAT is now ready to calculate the following shoreline change statistics: (a) shoreline change envelope (SCE), (b) net shoreline movement (NSM), (c) end point rate (EPR), and (d) linear regression rate (LRR). The first three statistics (SCE, NSM and EPR) require only two shoreline vectors while LRR requires at least three (3) shoreline vectors to compute the rate of change. Note that both SCE and NSM refer to magnitude or distance in meters (m) while EPR and LRR are rate-of-change statistics, in meters/year (m/y).
+After casting the transects, QSCAT is now ready to calculate the following shoreline change statistics: (a) shoreline change envelope (SCE), (b) net shoreline movement (NSM), (c) end point rate (EPR), and (d) linear regression rate (LRR). The first three statistics (SCE, NSM and EPR) require only two shoreline vectors while LRR requires at least three (3) shoreline vectors to compute the rate of change. Note that both SCE and NSM refer to magnitude or distance in meters (m) while EPR and LRR are rate-of-change statistics, in meters/year (m/y) :cite:p:`2018:dsasv5`.
 
 Statistics Parameters
 =====================
@@ -96,16 +96,16 @@ The uncertainty of EPR (``EPR_unc``) is based on the following formula, after DS
 
 where:
 
-- uncyA - uncertainty of the youngest shoreline A
-- uncyB - uncertainty of the oldest shoreline B
-- yearA - year of youngest shoreline A
-- yearB - year of oldest shoreline B
+- :math:`uncyA` - uncertainty of the youngest shoreline A
+- :math:`uncyB` - uncertainty of the oldest shoreline B
+- :math:`yearA` - year of youngest shoreline A
+- :math:`yearB` - year of oldest shoreline B
 
 Both ``NSM`` and ``EPR`` require only two shoreline vectors, i.e., the youngest and oldest shoreline vectors. QSCAT will ignore any shoreline vector/s between the youngest and oldest years. As such, it provides no information about shoreline movement during the intervening years even if there are multiple shoreline positions in the input layer. Additional information may be inferred from the ``SCE``, which can at least identify the greatest magnitude of change and the corresponding time period for a given set of shoreline vectors.      
 
 Linear Regression Rate (LRR)
 ----------------------------
-For multiple shoreline positions, a more appropriate rate-of-change statistic to use is the Linear Regression Rate-of-change (LRR) since it takes into consideration all shoreline positions in the calculation, not just the endpoints like what NSM and EPR do. In fact, LRR requires at least three (3) shoreline vectors, or intersection points to calculate the rate of change, in m/y, for a given transect. LRR is determined from the slope of a least-squares regression line fitted to all shoreline intersection points for each transect (Himmelstoss et al., 2018). 
+For multiple shoreline positions, a more appropriate rate-of-change statistic to use is the Linear Regression Rate-of-change (LRR) since it takes into consideration all shoreline positions in the calculation, not just the endpoints like what NSM and EPR do. In fact, LRR requires at least three (3) shoreline vectors, or intersection points to calculate the rate of change, in m/y, for a given transect. LRR is determined from the slope of a least-squares regression line fitted to all shoreline intersection points for each transect. 
 
 .. math::
    LRR = \frac{\sum_{i=1}^{n} (x_i - \bar{x})*(y_i - \bar{y})}{\sum_{i=1}^{n} (x_i - \bar{x})*(x_i - \bar{x})}
