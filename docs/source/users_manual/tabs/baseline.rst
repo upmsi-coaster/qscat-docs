@@ -13,7 +13,7 @@ Tab: Baseline
 Baseline Parameters
 ===================
 
-The input layer is the **baseline** created in :ref:`generating baseline vectors <plugin_required_inputs_baseline>`:.
+The input layer is the **baseline** created in :ref:`generating baseline vectors <plugin_required_inputs_baseline>`.
 
 Baseline Placement
 ==================
@@ -38,3 +38,5 @@ In addition to baseline placement, another important parameter is baseline orien
    :align: center
    
    Guide for determining the appropriate baseline orientation.
+
+Both the baseline placement and orientation are crucial in determining the direction of transect casting. Additionally, they play a significant role in correctly assigning the sign (+ or -) to the calculated magnitude and rate of shoreline changes. This ensures that the interpretation of shoreline change data accurately represents whether there is erosion (negative value) or accretion (positive value) occurring.
