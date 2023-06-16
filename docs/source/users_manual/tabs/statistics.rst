@@ -33,7 +33,7 @@ The four shoreline change statistics available in QSCAT and the resulting sample
 Shoreline Change Envelope (SCE)
 -------------------------------
 
-The shoreline change envelope (SCE) is the maximum distance, in meters (m), among all the shorelines that intersect a given transect (Himmelstoss et al., 2018). If there are multiple shoreline vectors, one can easily identify the greatest magnitude of shoreline movement (SCE column) and when it occurred (SCE_closest year and SCE_farthest year columns) in the resulting attribute table of shoreline change statistics (Table X). Since SCE is a distance, all values are positive. The shoreline trends can be inferred from the SCE_trend column, whether SCE represents erosion, accretion or stability. 
+The shoreline change envelope (SCE) is the maximum distance, in meters (m), among all the shorelines that intersect a given transect (Himmelstoss et al., 2018). If there are multiple shoreline vectors, one can easily identify the greatest magnitude of shoreline movement (``SCE_value`` column) and when it occurred (``SCE_closest`` year and ``SCE_farthest`` year columns) in the resulting attribute table of shoreline change statistics (Table X). Since SCE is a distance, all values are positive. The shoreline trends can be inferred from the ``SCE_trend`` column, whether SCE represents erosion, accretion or stability. 
 
 SCE = \text{farthest year distance} - \text{closest year distance}
 
