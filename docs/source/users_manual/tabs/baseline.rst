@@ -25,8 +25,16 @@ After selecting the baseline layer, the next step is to choose the baseline plac
 .. figure:: img/baseline_placement.png
    :align: center
    
-   Baseline placement
+   Baseline placement.
 
 Baseline Orientation
 ====================
 
+In addition to baseline placement, another important parameter is baseline orientation, which determines the relative position of the land with respect to the drawn or digitized baseline. It specifies whether the land is on the right or left side of the baseline orientation. To assist in selecting the appropriate orientation, :numref:`_figure_baseline_orientation` illustrates different scenarios based on the direction of the baseline vector. In QSCAT, users can enable the "show baseline orientation" option, which adds arrows indicating the direction of the baseline vector.
+
+.. _figure_baseline_orientation:
+
+.. figure:: img/baseline_orientation.png
+   :align: center
+   
+   Guide for determining the appropriate baseline orientation.
