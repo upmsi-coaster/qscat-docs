@@ -27,6 +27,6 @@ After selecting the baseline layer, the next step is to choose the baseline plac
    
    Baseline placement
 
-
 Baseline Orientation
 ====================
+
