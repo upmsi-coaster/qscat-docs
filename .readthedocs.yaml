@@ -17,3 +17,5 @@ python:
 formats:
   - pdf
   - epub
+
+requirements_file: requirements.txt
