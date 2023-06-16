@@ -18,10 +18,11 @@ QSCAT User's Manual
    tabs/baseline
    tabs/shorelines
    tabs/transects
-   tabs/statistics
+   tabs/statistics/index
    tabs/forecasting
    tabs/visualization
    tabs/about
+   others/summary_report
    others/help_and_support
    others/contributors
    others/appendices/index

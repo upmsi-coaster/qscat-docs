@@ -4,6 +4,9 @@
 Appendix X: Example Summmary Report
 ===================================
 
+Shoreline Change Statistic
+--------------------------
+
 The following is an example of summary report for shoreline change statistic::
 
     [Author]

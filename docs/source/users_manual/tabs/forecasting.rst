@@ -17,6 +17,8 @@ Forecasting Parameters
 Forecasting Algorithm
 =====================
 
+Kalman Filter
+-------------
 
 Forecasting Period
 ==================

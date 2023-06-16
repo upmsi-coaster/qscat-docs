@@ -24,15 +24,24 @@ Transects Storage Parameters
 Layer output name
 -----------------
 
+xx
+
 Transect Count
 ==============
 
 This step allows the user to determine  the number of transects for casting, in terms of:
 
-#. **Transect spacing:** based on user-defined spacing or interval between transects, in meters. 
-#. **Number of transects:** based on the user-defined number of transects while QSCAT estimates the appropriate spacing between transects for a particular baseline.
+Transect spacing
+----------------
 
-In DSAS, the number of transects to be cast depends on the scale of the data, and the intended scale of output rate information (Himmelstoss et al., 2018). It has been observed that casting of transects in DSAS takes more time as the transect spacing becomes smaller. In QSCAT, the speed at which transects are cast do not differ significantly with varying transect spacing. A 10-m transect spacing applied to a nearly linear 94-km coastline of La Union took about 5-10 minutes in QSCAT while it took about 30-45 minutes in DSAS.   
+Based on user-defined spacing or interval between transects, in meters.
+
+Number of transects
+-------------------
+
+Based on the user-defined number of transects while QSCAT estimates the appropriate spacing between transects for a particular baseline.
+
+In DSAS, the number of transects to be cast depends on the scale of the data, and the intended scale of output rate information :cite:p:`2018:dsasv5`. It has been observed that casting of transects in DSAS takes more time as the transect spacing becomes smaller. In QSCAT, the speed at which transects are cast do not differ significantly with varying transect spacing. A 10-m transect spacing applied to a nearly linear 94-km coastline of La Union took about 5-10 minutes in QSCAT while it took about 30-45 minutes in DSAS.   
 
 Transect Parameters
 ===================
@@ -69,6 +78,9 @@ By default, the transects are clipped to the farthest shoreline extent, and the 
 Clip shoreline extent
 ---------------------
 
+xx
+
 Include intersections layers
 ----------------------------
 
+xx
