@@ -7,9 +7,9 @@ Appendix X: Vector Layer Naming
 Tabs: Transects
 ---------------
 
-========== ==================================================
+========== ====================================================
 Type       Output layer name
-========== ==================================================
-LineString ``<baseline layer name>_transects [<datetime>]
-Point      ``<baseline layer name>_intersections [<datetime>]
-========== ==================================================
+========== ====================================================
+LineString ``<baseline layer name>_transects [<datetime>]``
+Point      ``<baseline layer name>_intersections [<datetime>]``
+========== ====================================================
