@@ -52,8 +52,8 @@ Linear Regression Rate (LRR)
 For multiple shoreline positions, a more appropriate rate-of-change statistic to use is the Linear Regression Rate-of-change (LRR) since it takes into consideration all shoreline positions in the calculation, not just the endpoints like what NSM and EPR do. In fact, LRR requires at least three (3) shoreline vectors, or intersection points to calculate the rate of change, in m/y, for a given transect. LRR is determined from the slope of a least-squares regression line fitted to all shoreline intersection points for each transect (Himmelstoss et al., 2018). 
 
 Weighted Linear Regression (WLR)
-
 --------------------------------
+
 Pairwise Comparison of Shorelines
 =================================
 
