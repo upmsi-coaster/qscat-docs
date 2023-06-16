@@ -30,6 +30,33 @@ Shoreline Change Statistics
 
 The four shoreline change statistics available in QSCAT and the resulting sample attribute table (Table X) are described below. 
 
+.. list-table:: Statistics
+   :header-rows: 1
+   :widths: 80 20
+
+   * - Statistics
+     - Description
+   * - SCE
+     - Shoreline Change Envelope
+   * - NSM
+     - Net Shoreline Movement
+   * - EPR
+     - End-Point Rate
+   * - EPR_unc
+     - Uncertainty of End-Point Rate
+   * - LRR
+     - Linear Regression Rate / Slope
+   * - LSE
+     - Standard Error of Estimate of Linear Regression
+   * - LCI
+     - Confidence Interval of Linear Regression
+   * - WRR
+     - Weighted Linear Regression Rate / Slope
+   * - WSE
+     - Standard Error of Estimate of Weighted Linear Regression
+   * - WCI
+     - Confidence Interval of Weighted Linear Regression
+
 Shoreline Change Envelope (SCE)
 -------------------------------
 
