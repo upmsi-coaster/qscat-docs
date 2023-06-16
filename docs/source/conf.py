@@ -17,7 +17,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.numfig',
     #'sphinxcontrib.bibtex',
 ]
 #bibtex_bibfiles = ['refs.bib']
@@ -37,3 +36,6 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# Enable numeric figure references
+numfig = True
