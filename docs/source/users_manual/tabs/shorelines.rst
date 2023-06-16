@@ -24,4 +24,4 @@ For the input layer merged shorelines, the uncertainty value should be based on 
 Shorelines Fields
 =================
 
-Under the :menuselection:`Shoreline Fields`, select the ``date`` and ``ucertainty`` fields of the currently selected shoreline layer to be used. These are the fields that are automatically (:ref:`shorelines fields automator <_tab_automator_shoreline_fields>`) or manually created.
+Under the :menuselection:`Shoreline Fields`, select the ``date`` and ``ucertainty`` fields of the currently selected shoreline layer to be used. These are the fields that are automatically (:ref:`shorelines fields automator <tab_automator_shoreline_fields>`) or manually created.
