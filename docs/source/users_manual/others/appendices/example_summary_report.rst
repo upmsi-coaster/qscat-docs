@@ -2,9 +2,10 @@
 .. _appendices_example_summary_report:
 
 Appendix X: Example Summmary Report
+===================================
 
 The following is an example of summary report for shoreline change statistic::
-    
+
     [Author]
     Name: Last name, First name Middle Name
     Affiliation: xx
