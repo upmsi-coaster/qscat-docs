@@ -15,6 +15,8 @@ The automator tab allows the user to automate repetitive tasks directly from the
 Shorelines
 ==========
 
+.. _tab_automator_shoreline_fields:
+
 Shoreline Fields
 ----------------
 
