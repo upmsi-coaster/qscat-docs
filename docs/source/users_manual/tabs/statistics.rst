@@ -40,7 +40,9 @@ Net Shoreline Movement (NSM)
 
 The net shoreline movement (NSM) represents the magnitude of shoreline change between the oldest and youngest shorelines in meters (m), and is calculated as:
 
-NSM = distance between youngest and oldest shorelines.
+.. math::
+
+   NSM = \text{{oldest year distance}} - \text{{newest year distance}}
 
 The uncertainty is based on the shoreline with largest uncertainty values in the attribute table of the input layer. 
 
