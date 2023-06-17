@@ -1,3 +1,5 @@
+.. index:: Shoreline Change Statistics
+
 Shoreline Change Statistics
 ===========================
 
@@ -5,11 +7,10 @@ Shoreline Change Statistics
 
    .. contents::
       :local:
-      :depth: 2
 
 The four shoreline change statistics available in QSCAT and the resulting sample attribute table (Table X) are described below. 
 
-.. list-table:: Statistics
+.. list-table:: Shoreline change statistics acronyms
    :header-rows: 1
    :widths: 20 80
 
@@ -24,19 +25,19 @@ The four shoreline change statistics available in QSCAT and the resulting sample
    * - ``EPR_unc``
      - Uncertainty of End-Point Rate
    * - ``LRR``
-     - Linear Regression Rate / Slope
+     - Linear Regression Rate
    * - ``LR2``
      - R-Squared of Linear Regression
    * - ``LSE``
-     - Standard Error of Estimate of Linear Regression
+     - Standard Error of Linear Regression
    * - ``LCI``
      - Confidence Interval of Linear Regression
    * - ``WLR``
-     - Weighted Linear Regression Rate / Slope
+     - Weighted Linear Regression Rate
    * - ``WR2``
      - R-Squared of Weighted Linear Regression 
    * - ``WSE``
-     - Standard Error of Estimate of Weighted Linear Regression
+     - Standard Error of Weighted Linear Regression
    * - ``WCI``
      - Confidence Interval of Weighted Linear Regression
 
@@ -178,3 +179,25 @@ where:
 - :math:`n` - length of years and distances
 - :math:`\bar{x}` - mean of years
 - :math:`x_i` - i\ :sup:`th` year
+
+Output Layer Names
+------------------
+
+.. list-table:: 
+   :header-rows: 1
+   :widths: 20 80
+
+   * - Statistic
+     - Name
+   * - :menuselection:`ALL`
+     - ``<baseline layer name>_Stats [<datetime>]``
+   * - ``SCE``
+     - ``<baseline layer name>_SCE [<datetime>]``
+   * - ``NSM``
+     - ``<baseline layer name>_NSM (newest_year - oldest_year) [<datetime>]``
+   * - ``EPR, EPR_unc``
+     - ``<baseline layer name>_EPR (newest_year - oldest_year) [<datetime>]``
+   * - ``LRR, LSE, LCI``
+     - ``<baseline layer name>_LRR [<datetime>]``
+   * - ``WLR, WSE, WCI``
+     - ``<baseline layer name>_WLR [<datetime>]``

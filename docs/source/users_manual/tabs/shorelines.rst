@@ -12,6 +12,8 @@ Tab: Shorelines
 
 The :menuselection:`Shorelines Tab` allows the user to select and load the shorelines to be used for the analysis.
 
+.. _shorelines_parameters:
+
 Shorelines Parameters
 =====================
 

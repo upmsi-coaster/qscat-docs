@@ -75,8 +75,8 @@ Transect Output
 
 By default, the transects are clipped to the farthest shoreline extent, and the shoreline intersections are shown on the transects. The user can choose not to view these by unclicking the selection on the transect output.
 
-Clip shoreline extent
----------------------
+Clip transects to shoreline extent
+----------------------------------
 
 xx
 
@@ -84,3 +84,17 @@ Include intersections layers
 ----------------------------
 
 xx
+
+Output Layer Names
+------------------
+
+.. list-table:: 
+   :header-rows: 1
+   :widths: 20 80
+
+   * - Type
+     - Name
+   * - Transects
+     - ``<baseline layer name>_transects [<datetime>]``
+   * - Intersections
+     - ``<baseline layer name>_intersections [<datetime>]``
