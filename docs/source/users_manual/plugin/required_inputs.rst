@@ -14,10 +14,10 @@ To use this plugin, you only need these two vector layers:
 Shorelines Layer
 ================
 
+The first primary data required in ``QSCAT`` is the :menuselection:`Shoreline`, or roughly the boundary between land and water. In practice, the shoreline is not usually taken as the `waterline`, or the boundary between land and sea due to tides. Owing to tidal fluctuation, the shoreline can be anywhere between the low-tide line (LTL) and high-tide line (HTL). In many cases, high water features such as high-tide line (HTL), continuous scarps, or the vegetation line are used as shoreline proxies to minimize the effects of tides and at the same time, take into account the net effect of high-wave energy events such as storms on a coastline.
+
 Preparing the shoreline vectors
 -------------------------------
-
-The first primary data required in ``QSCAT`` is the :menuselection:`Shoreline`, or roughly the boundary between land and water. In practice, the shoreline is not usually taken as the `waterline`, or the boundary between land and sea due to tides. Owing to tidal fluctuation, the shoreline can be anywhere between the low-tide line (LTL) and high-tide line (HTL). In many cases, high water features such as high-tide line (HTL), continuous scarps, or the vegetation line are used as shoreline proxies to minimize the effects of tides and at the same time, take into account the net effect of high-wave energy events such as storms on a coastline 
 
 Shoreline data can be acquired through mapping using a handheld GPS unit, or traced on topographic maps, satellite images, and aerial photographs. The methods for extracting the shoreline on topographic map, and satellite images are discussed in detail in the accompanying **Manual on Shoreline Change Analysis**. The shoreline vectors generated in this step will be the main input dataset to ``QSCAT``.
 
@@ -54,12 +54,16 @@ Field                       Name         Data Type   Format
 
    You can manually add the attribute table, but you can also automate the addition of the required attribute fields name and data types using the ``QSCAT`` :ref:`tab_automator_shoreline_fields` automator.
 
+.. _plugin_required_inputs_baseline:
+
 Baseline Layer
 ==============
-
-Generating the baseline vectors
--------------------------------
 
 Another important input data is the :menuselection:`Baseline`, a vector constructed by the user that is parallel to and at a certain distance from the shoreline. Similar to ``DSAS``, the :menuselection:`Baseline` is the starting point for all shoreline change calculations to be made in ``QSCAT``.  It is not part of the ``QSCAT`` plugin but can be generated using ``QGIS`` or any GIS software with the same functionality.
 
 Unlike ``DSAS``, ``QSCAT`` does not currently supports multiple base segments on a single transect casting. It is recommended to run separate transect casting for each baseline segment to increase versatility, allowing for different input parameters for each baseline segment. Thus, ``QSCAT`` does not have any required attribute table for the baseline layer.
+
+Generating the baseline vectors
+-------------------------------
+
+A common technique when generating the baseline is buffer the shape  of all
