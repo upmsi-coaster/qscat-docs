@@ -96,4 +96,7 @@ For the next step, you will manually choose the side of the ``LineString`` to de
 Choosing baseline side
 .......................
 
-xx
+Manual steps:
+
+#. xx
+#. xx
