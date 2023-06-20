@@ -82,8 +82,7 @@ Parameter                   Value
 =========================== ======
 :guilabel:`Segments`        5
 :guilabel:`End cap style`   Flat
-:guilabel:`Join style`      Miter
-:guilabel:`Miter limit`     2.0
+:guilabel:`Join style`      Round
 :guilabel:`Dissolve result` Enable
 =========================== ======
 
