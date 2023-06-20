@@ -28,8 +28,12 @@ If shoreline vectors are traced or gathered for each year and stored in separate
 
 The following are steps to merge multiple shoreline layers into a single layer using ``QGIS``:
 
-#. xx
-#. xx
+#. Open :menuselection:`Processing --> Toolbox`.
+#. Search for ``Merge vector layers`` in the search bar.
+#. In :guilabel:`Input layers`, click :guilabel:`...` then select the shoreline layers to be merged. After you are done selecting, click :guilabel:`OK` when done.
+#. In :guilabel:`Destination CRS`, select the appropriate ``CRS`` of the shoreline layers for your project.
+#. In :guilabel:`Merged`, it is recommended to permanently save the merged layers. Thus, click :guilabel:`...`, and :guilabel:`Save to file`. Choose a folder (recommended in the same folder of your ``QGIS`` project), pick a file name and choose ``SHP files (*.shp)`` as the file type, and click :guilabel:`Save`.
+#. Click :guilabel:`Run` to start the merge process. Once finished, the newly merged layer with your chosen file name will appear in the ``Layers`` panel.
 
 Adding attribute fields and values
 ----------------------------------
