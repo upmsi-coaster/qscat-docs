@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'QSCAT'
-copyright = '2023, UP-MSI'
+copyright = '2023'
 author = 'Louis Facun'
 
-release = '1.1.1-beta'
-version = '1.1.1-beta'
+release = '1.1.3-beta'
+version = '1.1.3-beta'
 
 # -- General configuration
 
@@ -19,6 +19,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxcontrib.bibtex',
 ]
+# -- Bibtex configuration
 bibtex_bibfiles = ['refs.bib']
 bibtex_reference_style = 'author_year'
 
@@ -31,7 +32,6 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 
 # -- Options for HTML output
-
 html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
