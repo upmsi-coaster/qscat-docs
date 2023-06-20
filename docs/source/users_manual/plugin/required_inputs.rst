@@ -32,7 +32,7 @@ The following are steps to merge multiple shoreline layers into a single layer u
 #. Search for ``Merge vector layers`` in the search bar.
 #. In :guilabel:`Input layers`, click :guilabel:`...` then select the shoreline layers to be merged. After you are done selecting, click :guilabel:`OK` when done.
 #. In :guilabel:`Destination CRS`, select the appropriate ``CRS`` of the shoreline layers for your project.
-#. In :guilabel:`Merged`, it is recommended to permanently save the merged layers. Thus, click :guilabel:`...`, and :guilabel:`Save to file`. Choose a folder (recommended in the same folder of your ``QGIS`` project), pick a file name and choose ``SHP files (*.shp)`` as the file type, and click :guilabel:`Save`.
+#. In :guilabel:`Merged`, it is recommended to permanently save the merged layers. Thus, click :guilabel:`...`, and :guilabel:`Save to file`. Choose a folder (recommended in the same folder of your ``QGIS`` project), pick a file name such as ``Shorelines Merged`` and choose ``SHP files (*.shp)`` as the file type, and click :guilabel:`Save`.
 #. Click :guilabel:`Run` to start the merge process. Once finished, the newly merged layer with your chosen file name will appear in the ``Layers`` panel.
 
 Adding attribute fields and values
@@ -70,4 +70,30 @@ Unlike ``DSAS``, ``QSCAT`` does not currently supports multiple base segments on
 Generating the baseline vectors
 -------------------------------
 
-A common technique when generating the baseline is buffer the shape  of all
+In ``QGIS``, the creation of a baseline line vector involves the use of buffers and conversions. Initially, a buffer (in the form of a ``Polygon``) is generated around the merged shorelines layer. This buffer is then transformed into a ``LineString`` vector. Finally, you can choose which side of the ``LineString`` will serve as the designated baseline.
+
+Creating buffers
+.................
+
+For buffering, the following inputs are recommended:
+
+=========================== ======
+Parameter                   Value
+=========================== ======
+:guilabel:`Segments`        5
+:guilabel:`End cap style`   Flat
+:guilabel:`Join style`      Miter
+:guilabel:`Miter limit`     2.0
+:guilabel:`Dissolve result` Enable
+=========================== ======
+
+.. tip:: **Automating baseline buffer and conversion**
+
+   You can also create buffers and convert the buffer to a line vector manually from :menuselection:`Processing --> Toolbox`. However, you can automate the process using ``QSCAT`` :ref:`tab_automator_baseline_buffer` automator.
+
+For the next step, you will manually choose the side of the ``LineString`` to designate as the baseline.
+
+Choosing baseline side
+.......................
+
+xx

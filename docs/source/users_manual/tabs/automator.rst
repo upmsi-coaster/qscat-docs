@@ -40,5 +40,9 @@ QSCAT's uncertainty field ``any_name`` Decimal   x.xx
 Baseline
 =========
 
-Baseline Geometry
------------------
+.. _tab_automator_baseline_buffer:
+
+Baseline Buffer
+---------------
+
+xx
