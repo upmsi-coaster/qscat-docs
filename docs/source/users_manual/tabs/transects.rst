@@ -97,7 +97,7 @@ Transect-Shoreline Intersections
   
    Transects-Shoreline Intersections.
   
-In some cases, a transect intersects the shoreline vector at more than one point particularly on curved segments (:numref:`figure_transects_shoreline_intersections`). To handle shoreline vector/s with multiple intersections, ``QSCAT`` allows the user to choose the intersection point by distance (i.e., farthest or closest to the baseline) or by placement (seaward or landward, similar to ``DSAS``). As it will affect the distance between the intersection points at the baseline and the shoreline, it is recommended that the selected option be applied to all shorelines for analysis.
+In some cases, a transect intersects the shoreline vector at more than one point particularly on curved segments (). To handle shoreline vector/s with multiple intersections, ``QSCAT`` allows the user to choose the intersection point by distance (i.e., farthest or closest to the baseline) or by placement (seaward or landward, similar to ``DSAS``). As it will affect the distance between the intersection points at the baseline and the shoreline, it is recommended that the selected option be applied to all shorelines for analysis.
 
 Transect Output
 ===============
