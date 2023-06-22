@@ -4,6 +4,12 @@
 Required Inputs
 ***************
 
+.. only:: html
+
+   .. contents::
+      :local:
+      :depth: 3
+
 To use this plugin, you only need these two vector layers:
 
 #. **Shorelines layer:** vectors of shoreline positions for different years; and 
@@ -15,6 +21,8 @@ Shorelines Layer
 ================
 
 The first primary data required in ``QSCAT`` is the :menuselection:`Shoreline`, or roughly the boundary between land and water. In practice, the shoreline is not usually taken as the `waterline`, or the boundary between land and sea due to tides. Owing to tidal fluctuation, the shoreline can be anywhere between the low-tide line (LTL) and high-tide line (HTL). In many cases, high water features such as high-tide line (HTL), continuous scarps, or the vegetation line are used as shoreline proxies to minimize the effects of tides and at the same time, take into account the net effect of high-wave energy events such as storms on a coastline.
+
+.. _preparing_the_shoreline_vectors:
 
 Preparing the shoreline vectors
 -------------------------------
@@ -39,6 +47,7 @@ Adding attribute fields and values
 ----------------------------------
 
 After merging, each feature in the shoreline layer should contain the necessary information for each shoreline, including the shoreline date and uncertainty. The table below illustrates the required attribute table for the shoreline layer and the format of the attribute values:
+
 
 =========================== ============ =========== ===========
 Field                       Name         Data Type   Format
@@ -67,6 +76,8 @@ Another important input data is the :menuselection:`Baseline`, a vector construc
 
 Unlike ``DSAS``, ``QSCAT`` does not currently supports multiple base segments on a single transect casting. It is recommended to run separate transect casting for each baseline segment to increase versatility, allowing for different input parameters for each baseline segment. Thus, ``QSCAT`` does not have any required attribute table for the baseline layer.
 
+.. _generating_the_baseline_vectors:
+ 
 Generating the baseline vectors
 -------------------------------
 
@@ -77,20 +88,15 @@ Creating buffer
 
 For creating buffer geometry, the following inputs are recommended:
 
-.. list-table:: 
-   :header-rows: 1
-   :widths: 50 50
-
-   * - Parameter
-     - Value
-   * - :guilabel:`Segments`
-     - 5
-   * - :guilabel:`End cap style`
-     - Flat
-   * - :guilabel:`Join style` 
-     - Round
-   * - |checkbox| :guilabel:`Dissolve result`
-     - Checked
+======================================= ====================
+Parameter                               Value
+======================================= ====================
+:guilabel:`Distance`                    ``<input_distance>``
+:guilabel:`Segments`                    5
+:guilabel:`End cap style`               Flat
+:guilabel:`Join style`                  Round
+|checkbox| :guilabel:`Dissolve results` Checked
+======================================= ====================
 
 .. tip:: **Automating baseline buffer and conversion**
 
@@ -120,6 +126,6 @@ Choosing baseline side
    :width: 1.5em
 
 .. |checkbox| image:: /img/checkbox.png
-   :width: 1.3em
+   :width: 1.0em
 .. |toolbox| image:: /img/toolbox.png
    :width: 1.3em

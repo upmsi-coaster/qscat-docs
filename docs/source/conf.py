@@ -39,3 +39,4 @@ epub_show_urls = 'footnote'
 
 # Enable numeric figure references
 numfig = True
+numfig_secnum_depth = 2
