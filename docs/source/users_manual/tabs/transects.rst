@@ -29,7 +29,7 @@ xx
 Transect Count
 ==============
 
-This step allows the user to determine  the number of transects for casting, in terms of:
+This step allows the user to determine the number of transects for casting, in terms of:
 
 Transect spacing
 ----------------
@@ -72,19 +72,29 @@ Transect length
    
   Transects length.
 
-``DSAS`` uses the term search distance, which is the distance (in meters) that ``DSAS`` uses to search for intersections points from the baseline to the shoreline vectors along a transect (Fig. X). The baseline will be the starting point for the calculation of distances.  As depicted in Figure X, the concept of search distance is similar to transect length. Thus, in ``QSCAT``,  search distance is simply referred to as transect length. 
+``DSAS`` uses the term search distance, which is the distance (in meters) that ``DSAS`` uses to search for intersections points from the baseline to the shoreline vectors along a transect (Fig. X). The baseline will be the starting point for the calculation of distances.  As depicted in :numref:`figure_transect_length`, the concept of search distance is similar to transect length. Thus, in ``QSCAT``,  search distance is simply referred to as transect length. 
 
-Intuitively, the transect length should be long enough to intersect all shoreline vectors to be analyzed. To approximate this length, a user can estimate the  distance between the baseline and the shoreline farthest from it, and use the maximum value as the transect length. As such, a single transect length may not be applicable to the entire coastline due to varying magnitudes of change, and the curvature of the coast itself. On embayed coasts, the longer the transect, the greater is the possibility of transects intersecting one another particularly on  curved coastal segments. In such cases, a variable transect length should be implemented. Where a variable transect length is more suitable, it is advisable to segmentize the shoreline and baseline (see Section 3.1) prior to running ``QSCAT``.
+Intuitively, the transect length should be long enough to intersect all shoreline vectors to be analyzed. To approximate this length, a user can estimate the  distance between the baseline and the shoreline farthest from it, and use the maximum value as the transect length. As such, a single transect length may not be applicable to the entire coastline due to varying magnitudes of change, and the curvature of the coast itself. On embayed coasts, the longer the transect, the greater is the possibility of transects intersecting one another particularly on  curved coastal segments. In such cases, a variable transect length should be implemented. Where a variable transect length is more suitable, it is advisable to segmentize the shoreline and baseline (**see Section 3.1**) prior to running ``QSCAT``.
 
 Smoothing distance
 ------------------
 
-The next step is to specify the smoothing distance to be applied to the baseline to ensure that the cast transects will be oriented perpendicular to the baseline. Smoothing is needed particularly on curvy or embayed shorelines to prevent the transects from intersecting one another along the curved section of the coast (Himmelstoss et al., 2018). In the DSAS v5 manual (Himmelstoss et al., 2018), the following guidelines were provided:
+The next step is to specify the smoothing distance to be applied to the baseline to ensure that the cast transects will be oriented perpendicular to the baseline. Smoothing is needed particularly on curvy or embayed shorelines to prevent the transects from intersecting one another along the curved section of the coast :cite:p:`2018:dsasv5`. In the ``DSAS`` v5 manual :cite:p:`2018:dsasv5`, the following guidelines were provided:
 
 #. For curvy or sinuous coastline, the smoothing distance should be longer than the width of the bends in the shoreline. 
 #. The smoothing distance should not be too large to produce a nearly linear (or overly smoothed) baseline and generate transects that are oriented almost parallel to the baseline (Fig. X). 
-#. In DSAS, the recommended smoothing distance is 500 m but should not be more than 2500 m. 
-#. It is recommended, however, that the user experiment on using different smoothing distances until the transects become oriented perpendicular to the baseline. Figure 19 in the DSAS v5 manual (https://pubs.usgs.gov/of/2018/1179/ofr20181179.pdf) demonstrates several smoothing examples to guide the user in selecting the appropriate smoothing distance (Himmelstoss et al., 2018). Figure X shows how the smoothing procedure is being implemented in QSCAT.
+#. The recommended smoothing distance is 500 m but should not be more than 2500 m. 
+#. It is recommended, however, that the user experiment on using different smoothing distances until the transects become oriented perpendicular to the baseline. ``Figure 19`` in the ``DSAS`` v5 manual demonstrates several smoothing examples to guide the user in selecting the appropriate smoothing distance :cite:p:`2018:dsasv5`. :numref:`figure_transects_smoothing_distance` shows how the smoothing procedure is being implemented in both ``QSCAT`` and ``DSAS``.
+
+.. _figure_transects_smoothing_distance:
+
+.. figure:: /img/transects/transects-smoothing-distance.png
+   :align: center
+  
+   Transects-Shoreline Intersections.
+
+   A smoothing applied to a single transect with 200 meters distance. First, the baseline is traversed half the distance both left and right. Second, the two points are connected that will be the baseline where the smooth transect will be cast perpendicularly.
+  
 
 Transect-Shoreline Intersections
 ================================
@@ -92,12 +102,11 @@ Transect-Shoreline Intersections
 .. _figure_transects_shoreline_intersections:
 
 .. figure:: /img/transects/transects-shorelines-intersections.png
-   :name: my_figure_label
    :align: center
   
    Transects-Shoreline Intersections.
   
-In some cases, a transect intersects the shoreline vector at more than one point particularly on curved segments (). To handle shoreline vector/s with multiple intersections, ``QSCAT`` allows the user to choose the intersection point by distance (i.e., farthest or closest to the baseline) or by placement (seaward or landward, similar to ``DSAS``). As it will affect the distance between the intersection points at the baseline and the shoreline, it is recommended that the selected option be applied to all shorelines for analysis.
+In some cases, a transect intersects the shoreline vector at more than one point particularly on curved segments (:numref:`figure_transects_shoreline_intersections`). To handle shoreline vector/s with multiple intersections, ``QSCAT`` allows the user to choose the intersection point by distance (i.e., farthest or closest to the baseline) or by placement (seaward or landward, similar to ``DSAS``). As it will affect the distance between the intersection points at the baseline and the shoreline, it is recommended that the selected option be applied to all shorelines for analysis.
 
 Transect Output
 ===============
@@ -113,6 +122,8 @@ Include intersections layers
 ----------------------------
 
 xx
+
+.. _tab_transects_output_layer_names:
 
 Output Layer Names
 ------------------
