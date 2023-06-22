@@ -28,7 +28,7 @@ If shoreline vectors are traced or gathered for each year and stored in separate
 
 The following are steps to merge multiple shoreline layers into a single layer using ``QGIS``:
 
-#. Open :menuselection:`Processing --> Toolbox`.
+#. Open |toolbox| :menuselection:`Processing --> Toolbox`.
 #. Search for ``Merge vector layers`` in the search bar.
 #. In :guilabel:`Input layers`, click :guilabel:`...` then select the shoreline layers to be merged. After you are done selecting, click :guilabel:`OK` when done.
 #. In :guilabel:`Destination CRS`, select the appropriate ``CRS`` of the shoreline layers for your project.
@@ -101,7 +101,7 @@ Once the baseline buffer is created, you will need to manually designate the bas
 Choosing baseline side
 .......................
 
-*do I still need add images?*
+*add images?*
 
 #. First, enable the |checkbox| :guilabel:`Advanced Digitizing Toolbar` (if not yet enabled) by going to :menuselection:`View --> Toolbars --> Advanced Digitizing Toolbar`.
 #. Right click on the baseline buffer layer and select |toggleEditing| :guilabel:`Toggle Editing`.
@@ -120,4 +120,6 @@ Choosing baseline side
    :width: 1.5em
 
 .. |checkbox| image:: /img/checkbox.png
+   :width: 1.3em
+.. |toolbox| image:: /img/toolbox.png
    :width: 1.3em
