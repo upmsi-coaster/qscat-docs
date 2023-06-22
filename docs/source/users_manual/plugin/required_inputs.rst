@@ -90,12 +90,20 @@ Parameter                   Value
 
    You can also create buffers and convert the buffer to a line vector manually from :menuselection:`Processing --> Toolbox`. However, you can automate the process using ``QSCAT`` :ref:`tab_automator_baseline_buffer` automator.
 
-For the next step, you will manually choose the side of the ``LineString`` to designate as the baseline.
+Once the baseline buffer is created, you will need to manually designate the baseline side of the ``LineString`` in the next step.
 
 Choosing baseline side
 .......................
 
-Manual steps:
+*TODO: add images*
 
-#. xx
-#. xx
+#. First, enable the :guilabel:`Advanced Digitizing Toolbar` (if not yet enabled) by going to :menuselection:`View --> Toolbars --> Advanced Digitizing Toolbar`.
+#. Right click on the baseline buffer layer and select :guilabel:`Toggle Editing`.
+#. In the :guilabel:`Advanced Digitizing Toolbar`, click :guilabel:`Split Features`.
+#. Use the :guilabel:`Split Features` tool to draw two lines that intersects the baseline buffer. First, draw the first line where you want the baseline's starting point to be. Then, draw the second line where you want the baseline's ending point to be. If drawn properly, the baseline buffer will be split into parts.
+#. Next, select |selectFeatures| :guilabel:`Select Features by Area or Single Click` tool and select the baseline buffer segment that you want to remove. Selected segments will be highlighted in yellow line and red points (X). Hit :kbd:`Delete` to remove the selected segment. Remove all segments that you do not want until only the baseline segment you want remains.
+#. Finally, right click on the baseline buffer layer and select :guilabel:`Toggle Editing` to save the changes.
+#. If you are happy with final baseline, you can now permanently save it as a file, right click on the layer and select :guilabel:`Export --> Save Features As...`. Choose a folder (recommended in the same folder of your ``QGIS`` project), pick a file name such as ``Baseline``, and choose ``SHP files (*.shp)`` as the file type, and click :guilabel:`Save`.
+
+.. |selectFeatures| image:: /img/action-selection-rectangle.png
+   :width: 1.5em
