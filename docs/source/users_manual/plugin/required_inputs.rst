@@ -72,19 +72,25 @@ Generating the baseline vectors
 
 In ``QGIS``, the creation of a baseline line vector involves the use of buffers and conversions. Initially, a buffer (in the form of a ``Polygon``) is generated around the merged shorelines layer. This buffer is then transformed into a ``LineString`` vector. Finally, you can choose which side of the ``LineString`` will serve as the designated baseline.
 
-Creating buffers
-.................
+Creating buffer
+...............
 
-For buffering, the following inputs are recommended:
+For creating buffer geometry, the following inputs are recommended:
 
-=========================== ======
-Parameter                   Value
-=========================== ======
-:guilabel:`Segments`        5
-:guilabel:`End cap style`   Flat
-:guilabel:`Join style`      Round
-:guilabel:`Dissolve result` Enable
-=========================== ======
+.. list-table:: 
+   :header-rows: 1
+   :widths: 50 50
+
+   * - Parameter
+     - Value
+   * - :guilabel:`Segments`
+     - 5
+   * - :guilabel:`End cap style`
+     - Flat
+   * - :guilabel:`Join style` 
+     - Round
+   * - |checkbox| :guilabel:`Dissolve result`
+     - Checked
 
 .. tip:: **Automating baseline buffer and conversion**
 
@@ -95,15 +101,23 @@ Once the baseline buffer is created, you will need to manually designate the bas
 Choosing baseline side
 .......................
 
-*TODO: add images*
+*do I still need add images?*
 
-#. First, enable the :guilabel:`Advanced Digitizing Toolbar` (if not yet enabled) by going to :menuselection:`View --> Toolbars --> Advanced Digitizing Toolbar`.
-#. Right click on the baseline buffer layer and select :guilabel:`Toggle Editing`.
+#. First, enable the |checkbox| :guilabel:`Advanced Digitizing Toolbar` (if not yet enabled) by going to :menuselection:`View --> Toolbars --> Advanced Digitizing Toolbar`.
+#. Right click on the baseline buffer layer and select |toggleEditing| :guilabel:`Toggle Editing`.
 #. In the :guilabel:`Advanced Digitizing Toolbar`, click :guilabel:`Split Features`.
-#. Use the :guilabel:`Split Features` tool to draw two lines that intersects the baseline buffer. First, draw the first line where you want the baseline's starting point to be. Then, draw the second line where you want the baseline's ending point to be. If drawn properly, the baseline buffer will be split into parts.
-#. Next, select |selectFeatures| :guilabel:`Select Features by Area or Single Click` tool and select the baseline buffer segment that you want to remove. Selected segments will be highlighted in yellow line and red points (X). Hit :kbd:`Delete` to remove the selected segment. Remove all segments that you do not want until only the baseline segment you want remains.
-#. Finally, right click on the baseline buffer layer and select :guilabel:`Toggle Editing` to save the changes.
-#. If you are happy with final baseline, you can now permanently save it as a file, right click on the layer and select :guilabel:`Export --> Save Features As...`. Choose a folder (recommended in the same folder of your ``QGIS`` project), pick a file name such as ``Baseline``, and choose ``SHP files (*.shp)`` as the file type, and click :guilabel:`Save`.
+#. Use the |splitFeatures| :guilabel:`Split Features` tool to draw two lines that intersects the baseline buffer. First, draw the first line where you want the baseline's starting point to be. Then, draw the second line where you want the baseline's ending point to be. If drawn properly, the baseline buffer will be split into parts.
+#. Next, select |selectFeatures| :guilabel:`Select Features by Area or Single Click` tool and select the baseline buffer segments that you want to remove. Selected segments will be highlighted in yellow line and red points (X). Hit :kbd:`Delete` to remove the selected segment. Remove all segments that you do not want until only the baseline segment you want remains.
+#. Finally, right click on the baseline buffer layer and select |toggleEditing| :guilabel:`Toggle Editing` to save the changes.
+#. If you are happy with final baseline, you can now permanently save it as a file, right click on the layer and select :guilabel:`Export --> Save Features As...`. Choose a folder (recommended in the same folder of your ``QGIS`` project), pick a file name such as ``Baseline``, and choose ``ESRI Shapefile (*.shp *.SHP)`` as the file type, and click :guilabel:`Save`. Choose appropriate ``CRS`` for your project and click :guilabel:`OK`.
 
-.. |selectFeatures| image:: /img/action-selection-rectangle.png
+
+.. |selectFeatures| image:: /img/action-select-features.png
    :width: 1.5em
+.. |toggleEditing| image:: /img/action-toggle-editing.png
+   :width: 1.5em
+.. |splitFeatures| image:: /img/action-split-features.png
+   :width: 1.5em
+
+.. |checkbox| image:: /img/checkbox.png
+   :width: 1.3em
