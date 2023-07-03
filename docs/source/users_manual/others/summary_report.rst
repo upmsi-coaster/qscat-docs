@@ -43,11 +43,49 @@ Input parameters
 Summary of results
 ..................
 
-
-
 Area Change
 -----------
+
+Input parameters
+................
+
+- **NSM layer:** layer name of the selected stat NSM layer.
+- **Polygon:** layer name of the selected area's polygon layer.
+  
+Summary of results
+..................
+
+**Area change**
+
+Erosion, accretion, stable:
+
+* No. of areas
+* (%) of areas
+* Avg. value
+* Min. value
+* Max. value
+
+**Shoreline**
+
+Erosion, accretion, stable:
+
+* Length of shoreline
+* (%) of shoreline
+* Avg. value
+* Min. value
+* Max. value
 
 Forecasting
 -----------
 
+Input parameters
+................
+
+Summary of results
+..................
+
+**Forecast points**
+
+**Forecast line**
+
+**Forecast area**
