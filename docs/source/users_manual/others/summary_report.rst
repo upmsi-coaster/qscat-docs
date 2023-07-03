@@ -59,8 +59,10 @@ Summary of results
 
 Erosion, accretion, stable:
 
-* No. of areas
+* Total areas
 * (%) of areas
+* No. of areas
+* (%) of no. areas
 * Avg. value
 * Min. value
 * Max. value
@@ -70,7 +72,9 @@ Erosion, accretion, stable:
 Erosion, accretion, stable:
 
 * Length of shoreline
-* (%) of shoreline
+* (%) of length
+* No. of shoreline
+* (%) of number of shoreline
 * Avg. value
 * Min. value
 * Max. value
