@@ -18,9 +18,9 @@ The :guilabel:`Coordinate Reference System` or ``CRS`` setting in this plugin en
 Metadata
 ========
 
-xx
+*Content for this section will be added soon.*
 
 Author Info
 -----------
 
-xx
+*Content for this section will be added soon.*

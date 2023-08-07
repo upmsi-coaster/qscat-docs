@@ -24,7 +24,7 @@ Transects Storage Parameters
 Layer output name
 -----------------
 
-xx
+*Content for this section will be added soon.*
 
 Transect Count
 ==============
@@ -116,12 +116,12 @@ By default, the transects are clipped to the farthest shoreline extent, and the 
 Clip transects to shoreline extent
 ----------------------------------
 
-xx
+*Content for this section will be added soon.*
 
 Include intersections layers
 ----------------------------
 
-xx
+*Content for this section will be added soon.*
 
 .. _tab_transects_output_layer_names:
 

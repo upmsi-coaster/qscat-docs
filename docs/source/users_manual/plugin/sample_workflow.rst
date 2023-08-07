@@ -4,14 +4,14 @@
 Sample Workflow
 ***************
 
-xx
+*Content for this section will be added soon.*
 
 Simple Sample Data
 ==================
 
-xx
+*Content for this section will be added soon.*
 
 Complex Sample Data
 ===================
 
-xx
+*Content for this section will be added soon.*

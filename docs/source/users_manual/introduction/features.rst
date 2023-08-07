@@ -56,7 +56,7 @@ Computes length and area of accreting, stable, and eroding coastal segments, inc
 Area
 ....
 
-xx
+*Content for this section will be added soon.*
 
 Length
 ......
@@ -67,8 +67,6 @@ Forecasting
 -----------
 
 Predict future shoreline positions including uncertainty areas.
-
-*screenshot figure of example forecasting*
 
 Automator
 ---------

@@ -13,17 +13,17 @@ Tab: Forecasting
 Forecasting Parameters
 ======================
 
-xx
+*Content for this section will be added soon.*
 
 Forecasting Algorithm
 =====================
 
-xx
+*Content for this section will be added soon.*
 
 Kalman Filter
 -------------
 
-xx
+*Content for this section will be added soon.*
 
 Forecasting Period
 ==================

@@ -45,14 +45,24 @@ Generate outputs:
 Modes
 -----
 
+*Content for this section will be added soon.*
+
 Quantile
 ........
+
+*Content for this section will be added soon.*
 
 Equal Interval
 ...............
 
+*Content for this section will be added soon.*
+
 Natural Breaks (Jenks)
 ......................
 
+*Content for this section will be added soon.*
+
 Prettry Breaks
 ................
+
+*Content for this section will be added soon.*

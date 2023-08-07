@@ -90,6 +90,12 @@ Summary of results
 
 **Forecast points**
 
+*Content for this section will be added soon.*
+
 **Forecast line**
 
+*Content for this section will be added soon.*
+
 **Forecast area**
+
+*Content for this section will be added soon.*
