@@ -36,11 +36,11 @@ html_theme = 'sphinx_rtd_theme'
 
 # These folders are copied to the documentation's HTML output
 html_static_path = ['_static']
-html_theme_options = {
-    'logo_only': True,
-    'display_version': False,
-}
-html_logo = "qscat-logo.svg"
+# html_theme_options = {
+#     'logo_only': True,
+#     'display_version': False,
+# }
+# html_logo = "qscat-logo.svg"
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
