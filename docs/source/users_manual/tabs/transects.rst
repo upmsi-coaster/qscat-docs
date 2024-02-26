@@ -62,6 +62,8 @@ Transect Parameters
 
 Other important parameters are the transect length and smoothing distance to ensure that the transects are oriented perpendicular  to the baseline.
 
+.. _tab_transects_parameters_length:
+
 Transect length
 ---------------
 

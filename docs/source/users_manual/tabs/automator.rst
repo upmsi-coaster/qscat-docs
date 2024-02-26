@@ -10,7 +10,14 @@ Tab: Automator
       :local:
       :depth: 2
 
-The :guilabel:`Automator` tab allows the user to automate repetitive tasks directly from the plugin.
+The :guilabel:`Automator` tab allows the user to automate repetitive tasks directly from the plugin such as adding fields to the shoreline layer and baseline layer.
+
+.. _figure_tab_automator:
+
+.. figure:: /img/automator/automator-tab.png
+   :align: center
+
+   User interface of Automator tab.
 
 Shorelines
 ==========
@@ -39,6 +46,20 @@ Without the automator, the ``date`` and ``uncertainty`` fields can be manually a
 
 Baseline
 ========
+
+.. _tab_automator_baseline_fields:
+
+Baseline Fields
+---------------
+
+The :guilabel:`Baseline Fields` automator simplifies the process of adding attributes by automatically assigning pre-defined data types and custom field names. By simply defining the desired field name, the plugin takes care of the necessary data type assignments for each field. This requires the following input:
+
+#. **Input layer:** vector layer containing the merged baseline.
+#. **Placement field name:** field name that represents placement of baseline.
+#. **Orientation field name:** field name that captures the orientation of the baseline.
+#. **Transect length name:** field name that captures the length of the transect.
+
+For more information about these fields, please refer to :ref:`generating_the_baseline_vectors`.
 
 .. _tab_automator_baseline_buffer:
 

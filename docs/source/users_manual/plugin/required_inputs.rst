@@ -107,8 +107,6 @@ Once the baseline buffer is created, you will need to manually designate the bas
 Choosing baseline side
 .......................
 
-*add images?*
-
 #. First, enable the |checkbox| :guilabel:`Advanced Digitizing Toolbar` (if not yet enabled) by going to :menuselection:`View --> Toolbars --> Advanced Digitizing Toolbar`.
 #. Right click on the baseline buffer layer and select |toggleEditing| :guilabel:`Toggle Editing`.
 #. In the :guilabel:`Advanced Digitizing Toolbar`, click :guilabel:`Split Features`.
@@ -117,6 +115,27 @@ Choosing baseline side
 #. Finally, right click on the baseline buffer layer and select |toggleEditing| :guilabel:`Toggle Editing` to save the changes.
 #. If you are happy with final baseline, you can now permanently save it as a file, right click on the layer and select :guilabel:`Export --> Save Features As...`. Choose a folder (recommended in the same folder of your ``QGIS`` project), pick a file name such as ``Baseline``, and choose ``ESRI Shapefile (*.shp *.SHP)`` as the file type, and click :guilabel:`Save`. Choose appropriate ``CRS`` for your project and click :guilabel:`OK`.
 
+
+Optional multiple baseline vectors in one layer
+-----------------------------------------------
+
+Currently, QSCAT supports an experimental features which allows multiple baseline features in one layer. This feature is not yet fully supported and may not work as expected. To use this feature, you need to add 3 required fields in the attribute table of the baseline layer using :ref:`tab_automator_baseline_fields` automator. The required fields are: baseline placement, baseline orientation and transect length.
+
+Basically, if you want to use multiple baseline features in one layer or you want to cast transects on multiple baselines at once, you are required to define the baseline placement, baseline orientation and transect length in the attribute table of the baseline layer. The addition of attribute table allows QSCAT to know different input parameters for each baseline segment.
+
+The following are the supported values for each fields:
+
+==================== =====================
+Field                Values              
+==================== =====================
+baseline placement   ``sea`` or ``land``
+baseline orientation ``left`` or ``right``
+transect length      ``<any_number>``
+==================== =====================
+
+To know more about these values, please refer to the following: :ref:`tab_baseline_placement`, :ref:`tab_baseline_orientation` and :ref:`tab_transects_parameters_length` sections respectively.
+
+.. warning:: Values such as ``sea``, ``land``, ``left`` and ``right`` are case-sensitive and should be written as is. If the values are not written as is, QSCAT will not recognize the values and will default to the values defined in the baseline parameters tab. Although, these may change in the future.
 
 .. |selectFeatures| image:: /img/action-select-features.png
    :width: 1.5em

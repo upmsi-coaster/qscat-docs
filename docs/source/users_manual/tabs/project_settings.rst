@@ -4,13 +4,13 @@
 Tab: Project Settings
 *********************
 
-The :guilabel:`Project Settings` tab is the first tab in the plugin interface. This tab contains settings that are used to configure the plugin for the QGIS project. The settings in this tab are used to set the coordinate reference system (CRS) and metadata for the project.
-
 .. only:: html
 
    .. contents::
       :local:
       :depth: 2
+
+The :guilabel:`Project Settings` tab is the first tab in the plugin interface. This tab contains settings that are used to configure the plugin for the QGIS project. The settings in this tab are used to set the coordinate reference system (CRS) and metadata for the project.
 
 .. _figure_tab_project_settings:
 

@@ -9,11 +9,15 @@ Tab: Baseline
    .. contents::
       :local:
       :depth: 2
-      
+
+.. _tab_baseline_parameters:
+   
 Baseline Parameters
 ===================
 
 The input layer is the ``Baseline`` created in :ref:`generating_the_baseline_vectors`.
+
+.. _tab_baseline_placement:
 
 Baseline Placement
 ==================
@@ -26,6 +30,8 @@ After selecting the baseline layer, the next step is to choose the baseline plac
    :align: center
    
    Baseline placement.
+
+.. _tab_baseline_orientation:
 
 Baseline Orientation
 ====================
