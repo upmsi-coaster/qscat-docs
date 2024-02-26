@@ -10,7 +10,7 @@ Tab: Automator
       :local:
       :depth: 2
 
-The automator tab allows the user to automate repetitive tasks directly from the plugin.
+The :guilabel:`Automator` tab allows the user to automate repetitive tasks directly from the plugin.
 
 Shorelines
 ==========
