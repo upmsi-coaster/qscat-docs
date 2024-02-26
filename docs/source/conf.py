@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'QSCAT'
-copyright = '2023'
+copyright = '2024'
 author = 'Louis Facun'
 
-release = '1.1.3-beta'
-version = '1.1.3-beta'
+release = '1'
+version = '1'
 
 # -- General configuration
 
@@ -41,7 +41,7 @@ html_static_path = ['_static']
 #     'display_version': False,
 # }
 # html_logo = "qscat-logo.svg"
-
+html_last_updated_fmt = '%Y %b %d, %H:%M %z'
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
 html_css_files = [
