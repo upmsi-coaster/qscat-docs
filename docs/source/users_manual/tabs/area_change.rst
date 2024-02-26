@@ -1,8 +1,8 @@
 .. _tab_area_change:
 
-****************
-Tab: Area Change
-****************
+***********************
+Tab: Area Change (BETA)
+***********************
 
 .. only:: html
 
