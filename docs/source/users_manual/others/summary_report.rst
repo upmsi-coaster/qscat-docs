@@ -1,3 +1,5 @@
+.. _summary_report:
+
 **************
 Summary Report
 **************
