@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'QSCAT'
-copyright = '2024'
-author = 'Louis Facun'
+copyright = '2024, UP-MSI COASTER Team'
+author = 'UP-MSI COASTER Team'
 
-release = '1'
-version = '1'
+release = '1.0.0'
+version = '1.0.0'
 
 # -- General configuration
 
@@ -55,4 +55,3 @@ epub_show_urls = 'footnote'
 # Enable numeric figure references
 numfig = True
 numfig_secnum_depth = 2
-
