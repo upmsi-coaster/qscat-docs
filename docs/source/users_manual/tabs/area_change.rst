@@ -1,5 +1,8 @@
-Area Change Statistics
-======================
+.. _tab_area_change:
+
+****************
+Tab: Area Change
+****************
 
 .. only:: html
 
