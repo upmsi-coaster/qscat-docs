@@ -27,6 +27,11 @@ Shorelines
 Shoreline Fields
 ----------------
 
+.. figure:: /img/automator/automator-tab-shoreline-fields.png
+   :align: center
+
+   Shoreline Fields section in Automator tab.
+
 The :guilabel:`Shorelines Fields` automator simplifies the process of adding attributes by automatically assigning pre-defined data types and custom field names. By simply defining the desired field name, the plugin takes care of the necessary data type assignments for each field. This requires the following input:
 
 #. **Input layer:** vector layer containing the merged shorelines.
