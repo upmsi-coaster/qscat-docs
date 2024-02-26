@@ -11,6 +11,7 @@ QSCAT User's Manual
    introduction/system_requirements
    introduction/features
    introduction/installation_steps
+   introduction/qscat_gui
    plugin/required_inputs
    plugin/sample_workflow
    tabs/project_settings
