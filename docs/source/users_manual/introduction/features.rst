@@ -61,7 +61,7 @@ Area
 Length
 ......
 
-xx
+Shoreline length of the newest year.
 
 Forecasting
 -----------
